@@ -5,6 +5,17 @@
   padding: 0;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .panel {
   height: 100vh;
+}
+
+#panel2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

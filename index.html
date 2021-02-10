@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/about.css" />
   </head>
 
   <body>
@@ -23,7 +24,7 @@
       </a>
       <div class="navbar-link">
         <ul>
-          <li><a href="#">Cennik</a></li>
+          <li><a href="#panel2">Cennik</a></li>
           <li><a href="#">Galeria</a></li>
           <li><a href="#">Kontakt</a></li>
         </ul>
@@ -31,10 +32,41 @@
     </nav>
 
     <main>
-      <div class="panel panel1">
+      <div class="panel" id="panel1">
         <img src="img/es.jpg" alt="es" />
       </div>
-      <div class="panel panel2"></div>
+      <div class="panel" id="panel2">
+        <div class="about-container">
+          <div class="item item1">
+            <img src="img/toy_car.png" alt="toy car icon" class="icon" />
+            <h4>Pasja</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi
+              beatae voluptatem veniam accusamus ut. Nulla.
+            </p>
+          </div>
+          <div class="item item2">
+            <img
+              src="img/electric_car.png"
+              alt="electric car icon"
+              class="icon"
+            />
+            <h4>Profesjonalizm</h4>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
+              nobis numquam deleniti corporis repudiandae ea!
+            </p>
+          </div>
+          <div class="item item3">
+            <img src="img/savings.png" alt="savings icon" class="icon" />
+            <h4>Lorem</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum
+              exercitationem, repellat cupiditate repellendus vero aspernatur!
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script src="js/navbar.js"></script>
