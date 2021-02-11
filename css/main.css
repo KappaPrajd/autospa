@@ -21,3 +21,14 @@ body {
   justify-content: center;
   background-color: #e3f2fd;
 }
+
+#panel1 {
+  background-image: url(../img/es.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.clear-text {
+  text-decoration: none;
+  color: white;
+}
