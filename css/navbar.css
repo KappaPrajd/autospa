@@ -37,6 +37,7 @@
 
 .toggle-button {
   position: absolute;
+  cursor: pointer;
   top: 0.75rem;
   right: 1rem;
   display: none;

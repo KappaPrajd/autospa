@@ -12,13 +12,17 @@ body {
 
 .panel {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#panel3 {
+  background-color: #ba5c5c;
+  flex-direction: column;
 }
 
 #panel2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   background-color: #e3f2fd;
 }
 
@@ -28,6 +32,7 @@ body {
   background-size: cover;
   background-position: top;
 }
+
 .clear-text {
   text-decoration: none;
   color: white;
