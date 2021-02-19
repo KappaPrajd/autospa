@@ -5,9 +5,14 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: flex;
   flex-direction: column;
+  background-color: white;
 }
 
 .panel {
@@ -15,15 +20,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
 #panel3 {
-  background-color: #ba5c5c;
   flex-direction: column;
-}
-
-#panel2 {
-  background-color: #e3f2fd;
 }
 
 #panel1 {

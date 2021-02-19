@@ -9,10 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/about.css" />
-    <link rel="stylesheet" href="css/services.css" />
+    <link rel="stylesheet" href="css/gallery.css" />
   </head>
 
   <body>
@@ -21,19 +25,17 @@
       <ul>
         <li><a href="#">HOME</a></li>
         <li><a href="#panel2">O NAS</a></li>
-        <li><a href="#">CENNIK</a></li>
-        <li><a href="#">GALERIA</a></li>
+        <li><a href="#panel3">USŁUGI</a></li>
+        <li><a href="#panel4">GALERIA</a></li>
         <li><a href="#">KONTAKT</a></li>
       </ul>
     </header>
-    <script src="java.js"></script>
-
     <main>
       <div class="panel" id="panel1"></div>
       <div class="panel" id="panel2">
         <div class="about-container">
           <div class="item item1">
-            <img src="img/toy_car.png" alt="toy car icon" class="icon" />
+            <img src="img/toy_car.png" />
             <h2 class="item-title">Lorem</h2>
             <hr />
             <p>
@@ -46,11 +48,7 @@
             </p>
           </div>
           <div class="item item2">
-            <img
-              src="img/electric_car.png"
-              alt="electric car icon"
-              class="icon"
-            />
+            <img src="img/electric_car.png" />
             <h2 class="item-title">Lorem</h2>
             <hr />
             <p>
@@ -62,7 +60,7 @@
             </p>
           </div>
           <div class="item item3">
-            <img src="img/savings.png" alt="savings icon" class="icon" />
+            <img src="img/savings.png" alt="savings icon" />
             <h2 class="item-title">Lorem</h2>
             <hr />
             <p>
@@ -77,36 +75,36 @@
       </div>
       <div class="panel" id="panel3">
         <h1 class="panel-title">Nasze usługi</h1>
-        <div class="line"></div>
-        <div class="services">
-          <div class="service service1">
-            <img
-              src="https://assets.website-files.com/5fa7ef52dce9a0004333e1c4/5fb3cbb1febbc85fe92823a7_exterior.jpg"
-              alt="car"
-              class="service-image"
-            />
-            <h2 class="service-title">Lorem ipsum</h2>
+      </div>
+      <div class="panel" id="panel4">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide"><img src="img/1.jpeg" alt="car" /></li>
+              <li class="glide__slide"><img src="img/2.jpg" alt="car" /></li>
+              <li class="glide__slide"><img src="img/3.jpeg" alt="car" /></li>
+            </ul>
           </div>
-          <div class="service service2">
-            <img
-              src="https://assets.website-files.com/5fa7ef52dce9a0004333e1c4/5fb3cbb1febbc85fe92823a7_exterior.jpg"
-              alt="car"
-              class="service-image"
-            />
-            <h2 class="service-title">Lorem ipsum</h2>
-          </div>
-          <div class="service service3">
-            <img
-              src="https://assets.website-files.com/5fa7ef52dce9a0004333e1c4/5fb3cbb1febbc85fe92823a7_exterior.jpg"
-              alt="car"
-              class="service-image"
-            />
-            <h2 class="service-title">Lorem ipsum</h2>
+
+          <div class="glide__bullets" data-glide-el="controls[nav]">
+            <button class="glide__bullet" data-glide-dir="=0"></button>
+            <button class="glide__bullet" data-glide-dir="=1"></button>
+            <button class="glide__bullet" data-glide-dir="=2"></button>
           </div>
         </div>
       </div>
     </main>
 
     <script src="js/navbar.js"></script>
+    <script src="https://unpkg.com/@glidejs/glide@3.4.1/dist/glide.js"></script>
+    <script>
+      var slider = document.querySelector(".glide");
+
+      if (slider) {
+        var glide = new Glide(slider);
+
+        glide.mount();
+      }
+    </script>
   </body>
 </html>
