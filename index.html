@@ -73,9 +73,7 @@
           </div>
         </div>
       </div>
-      <div class="panel" id="panel3">
-        <h1 class="panel-title">Nasze usługi</h1>
-      </div>
+      <div class="panel" id="panel3"></div>
       <div class="panel" id="panel4">
         <div class="glide">
           <div class="glide__track" data-glide-el="track">
@@ -85,11 +83,16 @@
               <li class="glide__slide"><img src="img/3.jpeg" alt="car" /></li>
             </ul>
           </div>
-
           <div class="glide__bullets" data-glide-el="controls[nav]">
-            <button class="glide__bullet" data-glide-dir="=0"></button>
-            <button class="glide__bullet" data-glide-dir="=1"></button>
-            <button class="glide__bullet" data-glide-dir="=2"></button>
+            <button class="glide__bullet" data-glide-dir="=0">
+              <div class="inside-button"></div>
+            </button>
+            <button class="glide__bullet" data-glide-dir="=1">
+              <div class="inside-button"></div>
+            </button>
+            <button class="glide__bullet" data-glide-dir="=2">
+              <div class="inside-button"></div>
+            </button>
           </div>
         </div>
       </div>
@@ -98,10 +101,12 @@
     <script src="js/navbar.js"></script>
     <script src="https://unpkg.com/@glidejs/glide@3.4.1/dist/glide.js"></script>
     <script>
-      var slider = document.querySelector(".glide");
+      const slider = document.querySelector(".glide");
 
       if (slider) {
-        var glide = new Glide(slider);
+        const glide = new Glide(slider, {
+          rewind: false,
+        });
 
         glide.mount();
       }
