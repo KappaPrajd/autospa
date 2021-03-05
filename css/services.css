@@ -1,0 +1,16 @@
+table {
+  width: 65vw;
+}
+
+tr {
+  height: 75px;
+}
+
+td {
+  font-size: 1.4rem;
+  padding-left: 20px;
+}
+
+td:not(tr:last-child > *) {
+  border-bottom: 1px solid black;
+}
