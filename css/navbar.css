@@ -69,3 +69,73 @@ header.sticky .logo,
 header.sticky ul li a {
   color: #000;
 }
+
+header.active {
+  display: block;
+  height: 100vh;
+  background-color: white;
+  transition: 0.4s;
+  overflow-y: hidden;
+}
+
+header.active {
+  overflow-y: hidden;
+}
+
+.header ul {
+  display: flex;
+}
+
+header.active .line {
+  background-color: black;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+.line:not(:last-child) {
+  margin-bottom: 6px;
+}
+
+@media only screen and (max-width: 1400px) {
+  header {
+    position: absolute;
+    padding: 4rem;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .active .line1 {
+    transform: rotate(45deg) translate(-2px, 3px);
+  }
+
+  .active .line2 {
+    display: none;
+  }
+
+  .active .line3 {
+    transform: rotate(-45deg) translate(3px, -8px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    padding: 2.5rem;
+  }
+}

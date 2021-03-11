@@ -8,9 +8,13 @@ tr {
 
 td {
   font-size: 1.4rem;
-  padding-left: 20px;
+  padding: 0 25px;
 }
 
 td:not(tr:last-child > *) {
   border-bottom: 1px solid black;
+}
+
+td:nth-child(even) {
+  text-align: right;
 }
