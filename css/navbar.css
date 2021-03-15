@@ -40,12 +40,12 @@ header ul {
   align-items: center;
 }
 
-header ul li {
+.nav-li {
   position: relative;
   list-style: none;
 }
 
-header ul li a {
+.nav-li a {
   position: relative;
   margin: 0 15px;
   text-decoration: none;
@@ -78,14 +78,6 @@ header.active {
   overflow-y: hidden;
 }
 
-header.active {
-  overflow-y: hidden;
-}
-
-.header ul {
-  display: flex;
-}
-
 header.active .line {
   background-color: black;
 }
@@ -116,13 +108,33 @@ header.active .line {
     display: none;
   }
 
-  .hamburger {
+  header.active ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
   }
 
+  .nav-li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .nav-li a {
+    font-size: 1.6rem;
+    color: black;
+    text-align: center;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   .active .line1 {
-    transform: rotate(45deg) translate(-2px, 3px);
+    transform: rotate(45deg) translate(-12px, 18px);
   }
 
   .active .line2 {
@@ -130,7 +142,7 @@ header.active .line {
   }
 
   .active .line3 {
-    transform: rotate(-45deg) translate(3px, -8px);
+    transform: rotate(-45deg) translate(-12px, -18px);
   }
 }
 
