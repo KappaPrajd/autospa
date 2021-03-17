@@ -17,7 +17,8 @@ body {
 }
 
 .panel {
-  height: 100vh;
+  min-height: 700px;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,6 +27,7 @@ body {
 
 #panel4 {
   flex-direction: column;
+  min-height: 550px;
 }
 
 #panel1 {
@@ -33,10 +35,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-}
-
-.hide {
-  overflow-y: hidden;
+  height: 100vh;
 }
 
 .clear-text {

@@ -2,6 +2,11 @@ const header = document.querySelector("header");
 const hamburger = document.querySelector(".hamburger");
 const navItems = [...document.getElementsByClassName("nav-li")];
 
+const clearClasses = () => {
+  hamburger.classList.remove("active");
+  header.classList.remove("active");
+};
+
 //sticky navbar
 window.addEventListener("scroll", () => {
   if (window.innerWidth > 1400) {
@@ -14,8 +19,7 @@ window.addEventListener("resize", () => {
   if (window.innerWidth <= 1400) {
     header.classList.remove("sticky");
   } else {
-    header.classList.remove("active");
-    hamburger.classList.remove("active");
+    clearClasses();
   }
 });
 
@@ -25,9 +29,4 @@ hamburger.addEventListener("click", () => {
   header.classList.toggle("active");
 });
 
-navItems.forEach((el) =>
-  el.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    header.classList.remove("active");
-  })
-);
+navItems.forEach((el) => el.addEventListener("click", clearClasses));

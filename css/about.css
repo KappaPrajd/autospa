@@ -28,8 +28,8 @@
 }
 
 .item img {
-  width: 210px;
-  height: 210px;
+  width: 160px;
+  height: 160px;
 }
 
 hr {
@@ -43,4 +43,34 @@ hr {
 p {
   font-weight: 200;
   line-height: 28px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .about-container{
+    justify-content: center;
+  }
+
+  .item:nth-child(2){
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .item {
+    padding: 50px 15px 25px;
+    width: 370px;
+  }
+
+  .item img {
+    width: 115px;
+    height: 115px;
+  }
+
+  .item:nth-child(3) {
+    display: none;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 0;
+  }
 }
