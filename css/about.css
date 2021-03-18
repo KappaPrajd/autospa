@@ -16,7 +16,6 @@
     0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
   text-align: center;
   width: 400px;
-  
 }
 
 .item:not(:last-child) {
@@ -33,6 +32,10 @@
   height: 160px;
 }
 
+.item img:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 hr {
   width: 60%;
   margin-bottom: 30px;
@@ -47,11 +50,11 @@ p {
 }
 
 @media only screen and (max-width: 1400px) {
-  .about-container{
+  .about-container {
     justify-content: center;
   }
 
-  .item:nth-child(2){
+  .item:nth-child(2) {
     display: none;
   }
 }
@@ -59,7 +62,7 @@ p {
 @media only screen and (max-width: 900px) {
   .item {
     padding: 50px 15px 25px;
-    width: 370px;
+    width: 330px;
   }
 
   .item img {
