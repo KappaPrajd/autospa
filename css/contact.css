@@ -27,7 +27,7 @@
 
 .container .contactInfo .box {
   position: relative;
-  padding: 20px 10px;
+  padding: 30px 10px;
   display: flex;
 }
 .container .contactInfo .box .icon {
@@ -48,7 +48,6 @@
   font-size: 16px;
   color: black;
   flex-direction: column;
-  
 }
 .container .contactInfo .box .text h3 {
   font-weight: 500;
@@ -63,10 +62,21 @@ a:hover {
   text-decoration: none;
 }
 
-#panel5{
-  background: rgb(241, 241, 241);;
+#panel5 {
+  background: rgb(241, 241, 241);
 }
 
-.text p{
+.text p {
   font-weight: 350;
+}
+
+@media only screen and (max-width: 1400px) {
+  #panel5 {
+    height: fit-content;
+    padding: 100px 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
 }
