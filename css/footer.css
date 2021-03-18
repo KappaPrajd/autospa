@@ -6,6 +6,7 @@ footer {
   color: black;
   height: 20vh;
   width: 100%;
+  flex-direction: column;
 }
 
 footer p {
@@ -16,6 +17,15 @@ footer p {
 #footer-text {
   color: black;
 }
+.attribution{
+  padding-top: 10px;
+  font-size: 10px;
+}
+.attribution a {
+  text-decoration: none;
+  color: black;
+}
+
 
 @media only screen and (max-width: 1400px) {
   footer p {
