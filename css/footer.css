@@ -13,6 +13,12 @@ footer p {
   text-align: center;
 }
 
-#footer-text{
+#footer-text {
   color: black;
+}
+
+@media only screen and (max-width: 1400px) {
+  footer p {
+    width: 300px;
+  }
 }
