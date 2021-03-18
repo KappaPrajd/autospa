@@ -50,4 +50,5 @@ body {
 #panel3 {
   height: fit-content;
   padding: 150px 0 0;
+  flex-direction: column;
 }

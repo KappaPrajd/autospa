@@ -9,10 +9,14 @@ tr {
 td {
   font-size: 1.4rem;
   padding: 0 25px;
+  border-bottom: 1px solid black;
 }
 
-td:not(tr:last-child > *) {
-  border-bottom: 1px solid black;
+.text-disclaimer{
+  font-size: 1.4rem;
+  text-align: center;
+  padding-top: 35px;
+  width: 65vw;
 }
 
 td:nth-child(even) {
