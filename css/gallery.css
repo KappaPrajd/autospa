@@ -2,6 +2,7 @@
   width: 80%;
   position: relative;
   flex-direction: column;
+  margin-top: 60px;
 }
 
 .glide__slide {
@@ -24,6 +25,7 @@
 .glide__bullets {
   position: absolute;
   margin-top: 20px;
+  margin-bottom: 4px;
   left: 50%;
   transform: translateX(-50%);
 }

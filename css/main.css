@@ -17,17 +17,22 @@ body {
 }
 
 .panel {
-  min-height: 700px;
   height: 80vh;
+  min-height: 700px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: white;
 }
 
+#panel5 {
+  background-color: rgb(240, 240, 240);
+}
+
 #panel4 {
   flex-direction: column;
-  min-height: 550px;
+  min-height: 800px;
+  justify-content: flex-start;
 }
 
 #panel1 {
