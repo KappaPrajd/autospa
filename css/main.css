@@ -35,11 +35,12 @@ body {
 }
 
 #panel1 {
-  background-image: url(../img/es.jpg);
+  background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   height: 100vh;
+  min-height: 600px;
 }
 
 .clear-text {
@@ -53,12 +54,12 @@ body {
   flex-direction: column;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1050px) {
   #panel1 {
-    background-image: url(../img/essmol.jpg);
+    background-image: url(../img/bgsmall.jpg);
   }
 }
 
-#panel2{
+#panel2 {
   padding-top: 100px;
 }
