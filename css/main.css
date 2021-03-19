@@ -58,3 +58,7 @@ body {
     background-image: url(../img/essmol.jpg);
   }
 }
+
+#panel2{
+  padding-top: 100px;
+}
