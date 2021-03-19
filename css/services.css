@@ -17,9 +17,24 @@ td {
   font-size: 1.4rem;
   text-align: center;
   padding-top: 35px;
-  width: 65vw;
+  width: 50vw;
+}
+
+.text-disclaimer a {
+  color: black;
+  text-decoration: underline;
 }
 
 td:nth-child(even) {
   text-align: right;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-disclaimer {
+    width: 90vw;
+  }
+
+  table {
+    margin-top: -100px;
+  }
 }

@@ -49,13 +49,12 @@ body {
 
 #panel3 {
   height: fit-content;
-  padding: 150px 0 0;
+  padding-top: 150px;
   flex-direction: column;
 }
 
-@media only screen and (max-width: 900px){
-  #panel1{
+@media only screen and (max-width: 900px) {
+  #panel1 {
     background-image: url(../img/essmol.jpg);
   }
-
 }
